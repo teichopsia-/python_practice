@@ -1,3 +1,5 @@
+# Couldn't figure this one out.
+
 s = 'azcbobobegghakl'
 
 def alph(s):
