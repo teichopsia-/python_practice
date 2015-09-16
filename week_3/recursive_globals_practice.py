@@ -7,7 +7,7 @@ def fibMetered(x):
         return fibMetered(x - 1) + fibMetered(x - 2)
         
 def testFib(n):
-    for i in range(n+1):
+    for i in range(n+1)
         global numCalls
         numCalls = 0
         print 'fib of {} = {}'.format(i, fibMetered(i))
