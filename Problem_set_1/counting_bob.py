@@ -12,3 +12,4 @@ def bob(s):
         count += 1
 
     print 'Number of times bob occurs is: {}'.format(count)
+    
