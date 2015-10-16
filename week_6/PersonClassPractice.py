@@ -51,3 +51,24 @@ class MitPerson(Person):
     # sorting Mit people using their ID numbers, not name.
     def __lt__(self, other):
         return self.idNum < other.idNum
+
+class Student(MitPerson):
+    pass
+       
+class UGraduate(Student):
+    
+    def __init__(self, name, classYear):
+        MitPerson.__init__(self, name)
+        self.year = classYear
+        
+    def getClass(self):
+        return self.year
+        
+class Graduate(Student):
+    pass
+    
+class TransferStudent(Student):
+    pass
+    
+def isStudent(obj):
+    return isinstance(obj, Student)
